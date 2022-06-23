@@ -4,8 +4,22 @@
   "description": "Homework with creating new project",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "./node_modules/.bin/eslint src/index.js",
+    "prepare": "husky install"
   },
-  "author": "da",
-  "license": "ISC"
+  "author": "Davyd",
+  "license": "UNLICENSED",
+  "devDependencies": {
+    "@tsconfig/recommended": "^1.0.1",
+    "@typescript-eslint/eslint-plugin": "^5.29.0",
+    "@typescript-eslint/parser": "^5.29.0",
+    "eslint": "^8.2.0",
+    "eslint-config-airbnb": "^19.0.4",
+    "eslint-plugin-import": "^2.25.3",
+    "husky": "^8.0.1",
+    "typescript": "^4.7.4"
+  },
+  "dependencies": {
+    "prettier": "^2.7.1"
+  }
 }
